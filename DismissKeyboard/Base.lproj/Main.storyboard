@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DismissKeyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="UIControl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kgP-bH-dYX">
+                                <rect key="frame" x="0.0" y="268.5" width="375" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="33G-vw-Sij">
+                                <rect key="frame" x="16" y="318.5" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="33G-vw-Sij" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="34X-kQ-iqw"/>
+                            <constraint firstAttribute="trailing" secondItem="kgP-bH-dYX" secondAttribute="trailing" id="B65-Qm-F34"/>
+                            <constraint firstItem="33G-vw-Sij" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KMn-Mc-gGK"/>
+                            <constraint firstItem="kgP-bH-dYX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SAi-EC-hFl"/>
+                            <constraint firstItem="kgP-bH-dYX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SoH-no-OtS"/>
+                            <constraint firstItem="33G-vw-Sij" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XIU-zq-cvI"/>
+                            <constraint firstItem="33G-vw-Sij" firstAttribute="top" secondItem="kgP-bH-dYX" secondAttribute="bottom" constant="20" id="rlu-ic-dfN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="33G-vw-Sij" secondAttribute="trailing" id="sK2-RJ-NOM"/>
+                        </constraints>
+                        <connections>
+                            <action selector="userTappedBackground:" destination="BYZ-38-t0r" eventType="touchDown" id="lhq-0D-r3R"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="firstTextField" destination="kgP-bH-dYX" id="nMI-Lj-BOa"/>
+                        <outlet property="secondTextField" destination="33G-vw-Sij" id="yn9-74-BfC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
